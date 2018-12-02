@@ -3,8 +3,8 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import{ MapsPage}from './Maps.page';
-import { from } from 'rxjs';
+import{ MapsPage }from './Maps.page';
+
 
 
 @NgModule({
@@ -16,4 +16,4 @@ import { from } from 'rxjs';
   ],
   declarations: [MapsPage]
 })
-export class AboutPageModule {}
+export class MapsPageModule {}
