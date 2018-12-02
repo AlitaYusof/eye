@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
-  { path: 'seach', loadChildren: './seach/seach.module#SeachPageModule' }
+ 
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
