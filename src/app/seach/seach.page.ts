@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-seach',
   templateUrl: './seach.page.html',
   styleUrls: ['./seach.page.scss'],
 })
+
 export class SeachPage implements OnInit {
+  constructor(public navCtrl: NavController) {
+  }
   ngOnInit(): void {
     throw new Error("Method not implemented.");
   }
@@ -46,10 +49,11 @@ export class SeachPage implements OnInit {
       this.items = this.items.filter((item) => {
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
+    }else{
+      this.items = null;
     }
   }
-  
-  mySlideOptions(page:true){
+  mySlideOptions() {
 
     this.slides = [{
       MediaUrl: 'img/ems.jpg'
@@ -58,5 +62,4 @@ export class SeachPage implements OnInit {
       MediaUrl: 'img/logistic.png'
     }]
   }
-  
 }
