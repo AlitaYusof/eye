@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 import{ MapsPage }from './Maps.page';
 import { AgmCoreModule } from '@agm/core';
 
-
 @NgModule({
   imports: [
     IonicModule,

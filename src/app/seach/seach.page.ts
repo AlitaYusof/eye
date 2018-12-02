@@ -9,6 +9,12 @@ import { NavController } from '@ionic/angular';
 export class SeachPage implements OnInit {
   constructor(public navCtrl: NavController) {
   }
+  pushPage(){
+
+    console.log("pushPage()  susscess");
+
+    this.navCtrl.navigateRoot('/');
+  }
   ngOnInit(): void {
     throw new Error("Method not implemented.");
   }
@@ -49,7 +55,7 @@ export class SeachPage implements OnInit {
       this.items = this.items.filter((item) => {
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
-    }else{
+    } else {
       this.items = null;
     }
   }
