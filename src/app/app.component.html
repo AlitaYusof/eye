@@ -2,12 +2,12 @@
   <ion-split-pane>
     <ion-menu>
       <ion-header>
-        <ion-toolbar>
+        <ion-toolbar color="danger">
           <ion-title>Menu</ion-title>
         </ion-toolbar>
       </ion-header>
 
-      <ion-content padding>
+      <ion-content padding >
         <ion-list>
           <ion-menu-toggle *ngFor="let p of appPages">
             <ion-item [routerLink]="p.url" [routerDirection]="'root'"> 
