@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
 import { HomePage } from '../home/home.page';
-import { AboutPage } from '../about/about.page';
-import { ContactPage } from '../contact/contact.page';
+import { MapsPage } from '../Maps/Maps.page';
+import {  StatusPage } from '../Status/Status.page';
 
 const routes: Routes = [
   {
@@ -22,14 +22,14 @@ const routes: Routes = [
         component: HomePage
       },
       {
-        path: 'about',
-        outlet: 'about',
-        component: AboutPage
+        path: 'Maps',
+        outlet: 'Maps',
+        component: MapsPage
       },
       {
-        path: 'contact',
-        outlet: 'contact',
-        component: ContactPage
+        path: 'Status',
+        outlet: 'Status',
+        component: StatusPage
       }
     ]
   },
