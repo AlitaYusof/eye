@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>
+        EYEFLEET
+      </ion-title>
+    </ion-toolbar >
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <!-- Default Searchbar -->
+    <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="showCancelButton" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{item}}
+        </ion-item>
+      </ion-list>
+    
+  
+    <ion-slides pager="true">
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+  
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+  
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
