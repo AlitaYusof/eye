@@ -10,10 +10,7 @@ export class SeachPage implements OnInit {
   constructor(public navCtrl: NavController) {
   }
   pushPage(){
-
-    console.log("pushPage()  susscess");
-
-    this.navCtrl.navigateRoot('/');
+    this.navCtrl.navigateRoot('/tabs/(home:home)');
   }
   ngOnInit(): void {
     throw new Error("Method not implemented.");
